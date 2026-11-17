@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Scents | Forever in Mind</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<nav>
+    <h2>NK Scents</h2>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="products.html">Categories ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="products.html?category=men">Men</a></li>
+                <li><a href="products.html?category=women">Women</a></li>
+            </ul>
+        </li>
+
+        <li><a href="cart.html" class="active">Cart</a></li>
+        
+        <li class="dropdown" id="user-menu" style="display:none;">
+            <a href="my_orders.html">
+                <i class='bx bx-user-circle'></i> Account ▾
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="my_orders.html">My Orders</a></li>
+                <li><a href="javascript:void(0)" onclick="logoutUser()"><i class='bx bx-log-out'></i> Logout</a></li>
+            </ul>
+        </li>
+        
+        <li id="login-nav"><a href="login.html" class="login-btn">Login</a></li>
+        <li><a href="admin_login.html" class="login-btn">Admin</a></li>
+    </ul>
+</nav>
+
+<div class="cart-container">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 30px; text-align: center;">Your Cart Portal</h2>
+    
+    <div id="cart-page-content">
+        <!-- Rendered by script.js -->
+    </div>
+</div>
+
+<footer>
+    © 2026 NK Scents – All Rights Reserved 
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
